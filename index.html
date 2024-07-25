@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <title>울산시립미술관</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/common/favicon.jpg" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap"><!--wrap-->
+    <header id="header"><!--header-->
+      <h1><a href="index.html"><img src="img/common/img_logo.svg" alt="main_logo"></a></h1>
+
+      <nav>
+        <ul class="gnb"><!--gnb-->
+          <li>
+            <a href="#">이용안내</a>
+            <ul class="depth2 one"><!-- depth2 -->
+              <li><a href="#">관람안내</a>
+                <ul class="depth3">
+                  <li><a href="#">관람정보</a></li>
+                  <li><a href="#">단체관람</a></li>
+                  <li><a href="#">관람예약</a></li>
+                </ul>
+              </li>
+              <li><a href="#">시설안내</a>
+                <ul class="depth3">
+                  <li><a href="#">전시실 안내</a></li>
+                  <li><a href="#">대관 안내</a></li>
+                </ul>
+              </li>
+              <li><a href="#">편의시설 안내</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">전시행사</a>
+            <ul class="depth2 two">
+              <li><a href="#">전시</a></li>
+              <li><a href="#">XR Lab</a></li>
+              <li><a href="#">스크리닝</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">배움/연구</a>
+            <ul class="depth2 three">
+              <li><a href="#">창의 워크샵</a></li>
+              <li><a href="#">연구출판</a>
+                <ul class="depth3">
+                  <li><a href="#">출판</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">소장품/아카이브</a>
+            <ul class="depth2 four">
+              <li><a href="#">소장품</a></li>
+              <li><a href="#">아카이브</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">소개</a>
+            <ul class="depth2 five">
+              <li><a href="#">미술관 소개</a>
+                <ul class="depth3">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">비전 및 미션</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">조직 및 활동</a></li>
+                  <li><a href="#">MI 소개</a></li>
+                </ul>
+              </li>
+              <li><a href="#">미술관 소식</a>
+                <ul class="depth3">
+                  <li><a href="#">공지</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+              </li>
+              <li><a href="#">자주하는 질문</a></li>
+              <li><a href="#">서비스 헌장</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="mgnb_wrap"><!--mgnb_wrap-->
+          <div class="mgnb"><!--mgnb-->
+            <ul>
+              <li><a href=#>이용안내</a>
+                <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down2">
+                <ul class="mdepth2">
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">시설안내</a></li>
+                  <li><a href="#">편의 시설안내</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=#>전시행사</a>
+                <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down2">
+                <ul class="mdepth2">
+                  <li><a href="#">전시</a></li>
+                  <li><a href="#">XR Lab</a></li>
+                  <li><a href="#">스크리닝</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=#>배움/연구</a>
+                <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down2">
+                <ul class="mdepth2">
+                  <li><a href="#">창의 워크샵</a></li>
+                  <li><a href="#">연구출판</a>
+                </ul>
+              </li>
+              <li>
+                <a href=#>소장품/아카이브</a>
+                <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down2">
+                <ul class="mdepth2">
+                  <li><a href="#">소장품</a></li>
+                  <li><a href="#">아카이브</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=#>소개</a>
+                <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down2">
+                <ul class="mdepth2">
+                  <li><a href="#">미술관 소개</a></li>
+                  <li><a href="#">미술관 소식</a></li>
+                  <li><a href="#">자주하는질문</a></li>
+                  <li><a href="#">서비스 헌장</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="dim"></div>
+        </div>
+      </nav>
+
+      <ul class="util"><!--util-->
+        <li class="utilMenu"><a href="#">로그인</a></li>
+        <li class="utilMenu"><a href="#">회원가입</a></li>
+        <li class="utilMenu"><a href="#">language
+            <img src="img/common/caret-down-fill.svg" alt="caret-down-fill" class="caret_down">
+            <img src="img/common/caret-up-fill.svg" alt="caret-up-fill" class="caret_up"></a>
+          <div class="lang_depth2">
+            <a href="#">Korean</a>
+            <a href="#">English</a>
+          </div>
+        </li>
+        <li><button class="ham">모바일 메뉴보기</button></li>
+        <li><button class="mgnb_close"><i class="bi bi-x-lg"></i></button></li>
+      </ul>
+    </header>
+
+    <main id="main"><!--main-->
+      <section id="banner"><!--banner-->
+        <h2>배너</h2>
+        <div class="swiper mb">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide mb1">
+              <div class="mb_txt">
+                <a href="#" class="btn_more">상세보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide mb2">
+              <div class="mb_txt"><a href="#" class="btn_more">상세보기</a>
+              </div>
+            </li>
+            <!--<li class="swiper-slide mb3">추 후에 추가 예정
+              <div class="mb_txt">
+                <a href="#" class="btn_more">상세보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide mb4">추 후에 추가 예정
+              <div class="mb_txt">
+                <a href="#" class="btn_more">상세보기</a>
+              </div>
+            </li>-->
+          </ul>
+          <div class="mb_control">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quick_menu" data-aos="fade-in"><!--quick-menu-->
+        <h2>퀵메뉴</h2>
+        <div class="inner">
+          <ul>
+            <li><a href="#"><span>예약안내</span></a></li>
+            <li><a href="#"><span>관람안내</span></a></li>
+            <li><a href="#"><span>시설안내</span></a></li>
+            <li><a href="#"><span>오시는길</span></a></li>
+            <li><a href="#"><span>자주하는질문</span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="exhibition"><!--exhibition-->
+        <h2 data-aos="fade-right">전시</h2>
+        <div class="inner">
+          <a href="#" class="btn_more" data-aos="fade-left">전체보기</a>
+          <div class="swiper exhibition" data-aos="fade-up">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <ul>
+                  <li><a href="#"><img src="img/main/exhibition01.svg" alt="《울산 모색 : 울 도시, 울 미술》">
+                      <div class="overlay">
+                        <p><strong>《울산 모색 : 울 도시, 울 미술》</strong>
+                          기간 2024. 3. 7. ~ 6. 9.
+                          장소 2전시실
+                          작가 16인
+                          작품수 37점
+                          관람료 성인: 1000원(울산시민 500원) / 어린이, 청소년, 경로: 무료
+                          주최/후원 울산시립미술관</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <dl>
+                  <dt><a href="#">울산 모색 : 울 도시, 울 미술</a></dt>
+                  <dd>2024. 3. 7. ~ 6. 9.</dd>
+                  <dd>2전시실</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <ul>
+                  <li><a href="#"><img src="img/main/exhibition02.svg" alt="《한국 근현대미술 흐름 : 시대 울림》">
+                      <div class="overlay">
+                        <p><strong>《한국 근현대미술 흐름 : 시대 울림》</strong>
+                          기간 2024. 3. 7. ~ 6. 9.
+                          장소 1전시실
+                          작가 이중섭, 박수근, 김환기 등 100여 명
+                          작품수 110여점
+                          관람료 성인: 1000원(울산시민 500원) / 어린이, 청소년, 경로: 무료
+                          주최/후원 울산시립미술관</p>
+                      </div>
+                    </a></li>
+                </ul>
+
+                <dl>
+                  <dt><a href="#">한국 근현대미술 흐름 : 시대 울림</a></dt>
+                  <dd>2024. 3. 7. ~ 6. 9.</dd>
+                  <dd>1전시실</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <ul>
+                  <li><a href="#"><img src="img/main/exhibition03.svg" alt="빛, 시간의 춤">
+                      <div class="overlay">
+                        <p><strong>빛, 시간의 춤</strong>
+                          기간 2024. 5. 30. ~ 10. 13.
+                          장소 XR Lab (지하 1층)
+                          작가 류재하
+                          관람료 성인 1000원(울산시민 500원) / 어린이,청소년, 경로 무료
+                          주최후원 울산시립미술관</p>
+                      </div>
+                    </a></li>
+                </ul>
+
+                <dl>
+                  <dt><a href="#">빛, 시간의 춤</a></dt>
+                  <dd>2024. 5. 30. ~ 10. 13.</dd>
+                  <dd>XR Lab (지하 1층)</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" data-aos="fade-up"><!--collection-->
+        <h2 data-aos="fade-right">소장품</h2>
+        <div class="inner">
+          <a href="#" class="btn_more" data-aos="fade-left">전체보기</a>
+          <div class="swiper collection">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><a href="#"><img src="img/main/collection01.svg" alt="해와달"></a>
+                <dl>
+                  <dt><a href="#">해와 달</a></dt>
+                  <dd>고사리 GO sari</dd>
+                  <dd>2022</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/collection02.svg" alt="칼더업사이드다운"></a>
+                <dl>
+                  <dt><a href="#">칼 더 업사이드 다운</a></dt>
+                  <dd>토마스 사라세노 Tomás SARACENO</dd>
+                  <dd>2018</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/collection03.svg" alt="밀물저아래"></a>
+                <dl>
+                  <dt><a href="#">밀물 저 아래</a></dt>
+                  <dd>타비타 르제르 Tabita REZAIRE</dd>
+                  <dd>2017</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/collection04.svg" alt="레드앤블루"></a>
+                <dl>
+                  <dt><a href="#">레드 앤 블루</a></dt>
+                  <dd>류 지야잉 (크립토ZR) LIU Jiaying (CrytoZR)</dd>
+                  <dd>2019</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="archive"><!--archive-->
+        <h2 data-aos="fade-right">아카이브</h2>
+        <div class="inner">
+          <a href="#" class="btn_more" data-aos="fade-left">전체보기</a>
+          <ul data-aos="fade-up">
+            <li>
+              <ul>
+                <li>
+                  <a href="#"><img src="img/main/archive01.svg" alt="아이는아이를안고">
+                    <dl>
+                      <dt>2024 어린이 기획전시 《아이는 아이를 안고》</dt>
+                      <dd>2024. 3. 21.</dd>
+                    </dl>
+                    <div class="overlay">
+                      <p><strong>2024 어린이 기획전시《아이는 아이를 안고》</strong>
+                        기간 2024. 3. 21. ~ 9. 22.
+                        장소 3전시실 및 로비
+                        작가 양정욱
+                        작품수 조각·설치 6점
+                        관람료 성인: 1000원(울산시민 500원) / 어린이, 청소년, 경로: 무료
+                        주최/후원 울산시립미술관
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><img src="img/main/archive02.svg" alt="XRlab엄선작시리즈(XRLab리뷰)">
+                <dl>
+                  <dt>XR Lab 엄선작 시리즈 《XR Lab 리뷰》</dt>
+                  <dd>2024. 2. 8.</dd>
+                </dl>
+                <div class="overlay">
+                  <p><strong>XR Lab 엄선작 시리즈 《XR Lab 리뷰》</strong>
+                    기간 2024. 2. 8. ~ 5. 19.
+                    장소 XR Lab (지하 1층)
+                    작가 알도 탐벨리니, 정연두, 아티피셜 네이쳐(지하루+그라함 웨이크필드) × 채찬병
+                    작품수 3점
+                    관람료 1,000원(울산시민 500원)
+                    주최/후원 울산시립미술관
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="img/main/archive03.svg" alt="2024 어린이 전시《꿈꾸는 아이들의 세계》">
+                <dl>
+                  <dt>2024 어린이 전시《꿈꾸는 아이들의 세계》</dt>
+                  <dd>2024. 1. 23.</dd>
+                </dl>
+                <div class="overlay">
+                  <p><strong>2024 어린이 전시《꿈꾸는 아이들의 세계》</strong>
+                    기간 2024. 1. 23. - 2024. 8. 27.
+                    장소 3전시실
+                    작가 신형섭
+                    작품수 설치 18점
+                    관람료 성인: 1000원(울산시민 500원) / 어린이, 청소년, 경로: 무료
+                    주최/후원 울산시립미술관
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="notice"><!--notice-->
+        <h2>공지사항</h2>
+        <div class="inner">
+          <div class="swiper notice">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <dl>
+                  <dt><a href="#">보도자료_빛, 시간의 춤</a></dt>
+                  <dd><a href="#">울산시립미술관은 5월 30일부터 10월
+                      13일까지 울산시립미술관 지하 1층
+                      매체예술전용관(XR랩)에서 ‘빛, 시간의 춤’ 전시를 개최한다고 밝혔다.</a></dd>
+                  <dd>2024-06-03</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt><a href="#">(교육활동) 어린이날 수화배우기</a></dt>
+                  <dd><a href="#">울산시립미술관(관장 채홍기)은 3월
+                      21일부터 9월 22일까지 미술관 1층
+                      3전시실에서 ‘아이는 아이를 안고’ 전시를 개최한다고 밝혔다.</a></dd>
+                  <dd>2024-04-23</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt><a href="#">양정욱 작가, 국립현대미술관 《올해의 작가상 2024》 후원작가로 선정</a></dt>
+                  <dd><a href="#">2024년 상반기 울산시립미술관 어린이
+                      전시 양정욱 작가가 국립현대미술관의
+                      《올해의 작가상 2024》후원 작가로 선정됐습니다.</a></dd>
+                  <dd>2024-04-18</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt><a href="#">보도자료_울산 모색</a></dt>
+                  <dd><a href="#">“한국 근현대 미술 100년을 한눈에”
+                      울산시립미술관, 한국 근현대미술 흐름
+                      전시 개최 한국화, 서양화, 조각, 사진, 설치 등 다양한 분야(장르)의 작품 110여 점이 전시된다.</a></dd>
+                  <dd>2024-03-06</dd>
+                </dl>
+              </li>
+            </ul>
+            <a href="#" class="btn_more">전체보기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"><!--footer-->
+      <div class="inner">
+        <ul>
+          <li>
+            <p><a href="#">공식 유튜브 바로가기</a></p>
+            <a href="#"><img src="img/common/youtube_icon.svg" alt="youtube_icon"></a>
+          </li>
+          <li>
+            <p><a href="#">공식 인스타그램 바로가기</a></p>
+            <a href="#"><img src="img/common/insta_icon.svg" alt="insta_icon"></a>
+          </li>
+          <li>
+            <p><a href="#">공식 페이스북 바로가기</a></p>
+            <a href="#"><img src="img/common/facebook_icon.svg" alt="facebook_icon"></a>
+          </li>
+        </ul>
+
+        <div class="footer_txt">
+          <div class="footer_left">
+            <a href="#"><span>개인정보처리방침</span></a>
+            <a href="#"><span>저작권 보호 정책</span></a>
+            <a href="#"><span>미술관 소개</span></a>
+          </div>
+
+          <div class="footer_right">
+            <address><span>울산 시립 미술관</span><br>
+              <span>(우44468) 울산광역시 중구 미술관길 72(북정동)</span><br>
+              <a href="tel:052-211-3800">대표전화번호 : 052-211-3800</a><br>
+              <a href="#">팩스번호 : 052-229-8429</a>
+            </address>
+            <p class="copy">Ulsan Metropolitan City all rights reserved</p>
+            <p>본 홈페이지에 게시된 전자우편주소는 개인정보보호법 및 정보통신망법에 따라 무단 수집을 거부합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#"><i class="bi bi-arrow-up-circle go_top"></i></a>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, });
+  </script>
+</body>
+
+</html>
